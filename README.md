@@ -22,10 +22,8 @@ To download the person-bicycle-car-detection.mp4 sample video file from the Inte
 - Navigate to the File: On the repository page, locate and click on the person-bicycle-car-detection.mp4 file.
 - Download the File: Once you are on the page displaying the video file, look for a "Download" or "Raw" button. Clicking this button will initiate the download of the video file to your computer.
 
-### Video Analysis Scripts
-- **analyze_goPro.py**: Basic script that connects to a GoPro stream, applies simple image processing (grayscale conversion), and displays analysis metrics.
-- **advanced_object_detect_goPro.py**: Advanced script that performs object detection on GoPro streams using a pre-trained MobileNet SSD model, focusing on detecting people and cars.
-- **droid_cam_demo.py**: Similar to the advanced detection script but configured to work with an Android phone camera stream via the IP Webcam app.
+### Object Detection Script
+- **mobilenet_nn_object_detect_from_goPro.py**: Performs object detection on GoPro streams using a pre-trained MobileNet SSD model, focusing on detecting objects in the video stream.
 
 ## Requirements
 
@@ -54,30 +52,18 @@ python spoof_gopro_server_from_mp4_on_disk.py
 ```
 This will start a server on `http://localhost:8085` that simulates a GoPro camera using a local MP4 file.
 
-### Running the Analysis Scripts
-After starting the server simulator:
-
-Basic analysis:
+### Running the Main Script
 ```bash
 python analyze_goPro.py
 ```
 
-Advanced object detection:
+### Running the Object Detection Script
+After starting the server simulator:
 ```bash
-python advanced_object_detect_goPro.py
-```
-
-### Using with Android Phone Camera
-To use with an Android phone camera:
-1. Install the IP Webcam app on your Android device
-2. Start the app and note the IP address and port
-3. Update the `stream_url` in `droid_cam_demo.py` to match your phone's IP address
-4. Run:
-```bash
-python droid_cam_demo.py
+python mobilenet_nn_object_detect_from_goPro.py
 ```
 
 ## Notes
 - Press 'q' to exit any of the video processing scripts
-- The object detection scripts are configured to detect and highlight people and cars
+- The object detection script is configured to detect and highlight objects in the video stream
 - The server simulator runs at 24fps by default
