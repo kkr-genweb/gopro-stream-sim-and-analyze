@@ -10,5 +10,9 @@ wheels/
 .venv
 uv.lock
 
+# Model files
+mobilenet_iter_73000.caffemodel
+deploy.prototxt
+
 # Media files
 person-bicycle-car-detection.mp4
