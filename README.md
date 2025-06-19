@@ -5,10 +5,12 @@ This repository contains a collection of Python scripts for working with GoPro c
 ## Overview
 
 This project provides tools for:
-- Connecting to and processing GoPro camera streams
 - Simulating a GoPro server using local video files
-- Performing basic and advanced video analysis
 - Object detection using pre-trained models
+
+## Setup instructions
+
+We are using [uv](https://docs.astral.sh/uv/) as our python manager. Execute uv init to create a virtual environment and install dependencies.
 
 ## Components
 
@@ -48,22 +50,16 @@ Navigate to the GitHub Repository: Go to the official MobileNet-SSD GitHub repos
 
 ### Starting the GoPro Server Simulator
 ```bash
-python spoof_gopro_server_from_mp4_on_disk.py
+uv run spoof_gopro_server_from_mp4_on_disk.py
 ```
 This will start a server on `http://localhost:8085` that simulates a GoPro camera using a local MP4 file.
-
-### Running the Main Script
-```bash
-python analyze_goPro.py
-```
 
 ### Running the Object Detection Script
 After starting the server simulator:
 ```bash
-python mobilenet_nn_object_detect_from_goPro.py
+uv run mobilenet_nn_object_detect_from_goPro.py
 ```
 
 ## Notes
-- Press 'q' to exit any of the video processing scripts
 - The object detection script is configured to detect and highlight objects in the video stream
 - The server simulator runs at 24fps by default
