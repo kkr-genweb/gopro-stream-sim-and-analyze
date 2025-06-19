@@ -15,6 +15,13 @@ This project provides tools for:
 ### GoPro Server Simulator
 - **spoof_gopro_server_from_mp4_on_disk.py**: Creates a Flask server that simulates a GoPro camera by streaming a local MP4 file. The server implements GoPro-compatible API endpoints.
 
+#### Downloading a video file to be looped as spoof GoPro Server
+To download the person-bicycle-car-detection.mp4 sample video file from the Intel IoT DevKit sample videos repository, follow these steps:
+
+- Go to the Repository: Open your web browser and go to the repository URL: https://github.com/intel-iot-devkit/sample-videos
+- Navigate to the File: On the repository page, locate and click on the person-bicycle-car-detection.mp4 file.
+- Download the File: Once you are on the page displaying the video file, look for a "Download" or "Raw" button. Clicking this button will initiate the download of the video file to your computer.
+
 ### Video Analysis Scripts
 - **analyze_goPro.py**: Basic script that connects to a GoPro stream, applies simple image processing (grayscale conversion), and displays analysis metrics.
 - **advanced_object_detect_goPro.py**: Advanced script that performs object detection on GoPro streams using a pre-trained MobileNet SSD model, focusing on detecting people and cars.
