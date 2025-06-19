@@ -32,6 +32,13 @@ This project provides tools for:
 - `deploy.prototxt`
 - `mobilenet_iter_73000.caffemodel`
 
+#### Downloading MobileNet-SSD Model Files
+
+Navigate to the GitHub Repository: Go to the official MobileNet-SSD GitHub repository: https://github.com/chuanqi305/MobileNet-SSD
+- Locate the Download Section: On the main page, scroll down to find a section, typically titled "Network mAP Download" or similar.
+- Download the Pre-trained Weights and Prototxt: Within this section, look for download links related to "MobileNet-SSD" or "deploy weights." The mobilenet_iter_73000.caffemodel (the pre-trained model weights) and deploy.prototxt (the network architecture definition) should be available through these links. 
+- You may need to click on a general "Download" link that leads to a third-party hosting service (like Google Drive or Baidu Yun) where the files are stored.
+
 ## Usage
 
 ### Starting the GoPro Server Simulator
