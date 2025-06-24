@@ -6,6 +6,9 @@ dist/
 wheels/
 *.egg-info
 
+# External dependencies
+MobileNet-SSD/
+
 # Virtual environments
 .venv
 uv.lock
@@ -16,3 +19,7 @@ deploy.prototxt
 
 # Media files
 person-bicycle-car-detection.mp4
+screen-grab-15sec.mp4
+store-aisle-detection.mp4
+screen-recording.mov
+screen-recording.mp4
